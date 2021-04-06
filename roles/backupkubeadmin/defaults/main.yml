@@ -1,2 +1,4 @@
 ---
-# defaults file for BackupKubeadmin
+# TODO: Define config options necessary for sensible remote backup storage
+backup_location: ""
+...
