@@ -1,0 +1,15 @@
+domain: redhatcop.redhat.io
+layout: ansible.sdk.operatorframework.io/v1
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
+projectName: day2-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: false
+  domain: redhatcop.redhat.io
+  group: day2ops
+  kind: Day2Op
+  version: v1alpha1
+version: "3"

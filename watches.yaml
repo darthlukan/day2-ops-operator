@@ -1,0 +1,7 @@
+---
+# Use the 'create api' subcommand to add watches to this file.
+- version: v1alpha1
+  group: day2ops.redhatcop.redhat.io
+  kind: Day2Op
+  playbook: playbooks/day2op.yml
+#+kubebuilder:scaffold:watch

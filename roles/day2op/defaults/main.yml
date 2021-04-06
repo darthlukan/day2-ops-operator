@@ -1,0 +1,39 @@
+---
+ops:
+  # List of namespaces to ensure are present
+  create_namespaces:
+    - foo
+    - bar
+    - baz
+  # LDAP Group Sync Config
+  ldap_group_sync:
+    config:
+      - TBD
+  # Prune objects. Options are logical "and" if both are provided.
+  prune_objects:
+    # Prune all images 30 days old or older
+    images: 
+      age: 30d
+      selector: ""
+    # Prune all builds where app=foo
+    builds:
+      age: null
+      selector: "app=foo"
+    # Prune all deployments 30 days old or older that also have app=bar
+    deployments:
+      age: 30d
+      selector: "app=bar"
+  disable_selfprovisioner: true
+  etcd_defrag: true
+  configure_k8s_auth:
+    - TBD
+  default_project_request_template:
+    - TBD
+  # Auto upgrade cluster within specific semver pattern
+  # If "patch" is true and the rest false, cluster will upgrade only "z" in 4.6.z
+  # If "minor" is true then cluster will upgrade "y" in 4.y.z
+  # IMPORTANT! This will only be valid on OpenShift 4, the operator will validate against CVO!
+  auto_cluster_upgrades:
+    patch: true
+    minor: false
+...

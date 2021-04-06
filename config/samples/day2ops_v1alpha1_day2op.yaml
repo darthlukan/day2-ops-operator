@@ -1,0 +1,6 @@
+apiVersion: day2ops.redhatcop.redhat.io/v1alpha1
+kind: Day2Op
+metadata:
+  name: day2op-sample
+spec:
+  foo: bar
