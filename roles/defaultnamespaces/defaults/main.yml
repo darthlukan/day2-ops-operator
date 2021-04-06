@@ -1,2 +1,9 @@
 ---
-# defaults file for DefaultNamespaces
+namespaces:
+  - name: foo
+    annotations: ""
+  - name: bar
+    annotations: ""
+  - name: baz
+    annotations: ""
+...
