@@ -1,2 +1,29 @@
 ---
-# tasks file for ClusterUpgrade
+- name: Get cluster version
+  community.kubernetes.k8s_info:
+    kind: ClusterVersion
+    api_version: config.openshift.io/v1
+    name: version
+  register: current_version
+
+  # TODO: This only gets the first version available, which is probably correct, but incomplete.
+- name:  Set version facts
+  set_fact:
+    available: "{{ current_version | community.general.json_query('.status.availableUpdates[0].version').split('.') }}"
+    available_minor: "{{ available[1] | int }}"
+    available_patch: "{{ available[2] | int }}"
+    current_minor: "{{ current_version.split('.')[1] | int }}"
+    current_patch: "{{ current_version.split('.')[2] | int }}"
+
+- name: Set logic facts
+  set_fact:
+    aminor_gt_cminor: "{{ available_minor > current_minor }}"
+    apatch_gt_cpatch: "{{ available_patch > current_patch }}"
+
+- name: Determine if minor upgrade
+  set_fact:
+    can_upgrade_minor: "{{ aminor_gt_cminor | default(false) }}"
+
+- name: Determine if patch upgrade
+  set_fact:
+    can_upgrade_patch: "{{ apatch_gt_cpatch | default(false) }}"
