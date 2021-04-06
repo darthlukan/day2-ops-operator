@@ -1,2 +1,6 @@
 ---
-# defaults file for EtcdBackup
+# TODO: Define options for sensible remote backup location
+backup_location: "REMOTE_LOCATION"
+
+# TODO: Define backup schedule, use CRON for sensible starting point
+schedule: ""

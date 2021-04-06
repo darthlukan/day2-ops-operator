@@ -1,2 +1,8 @@
 ---
-# tasks file for RemoveKubeadmin
+- name: Remove kubeadmin
+  community.kubernetes.k8s:
+    state: absent
+    name: kubeadmin
+    kind: Secret
+    api_version: v1
+...

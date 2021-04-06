@@ -1,2 +1,3 @@
 ---
-# defaults file for EtcdDefrag
+# TODO: Define sensible defrag schedule, use CRON as a starting point
+schedule: ""
