@@ -1,4 +1,19 @@
 ## Append samples you want in your CSV to this file as resources ##
 resources:
 - day2ops_v1alpha1_day2op.yaml
+- day2ops_v1alpha1_selfprovisioner.yaml
+- day2ops_v1alpha1_k8sauth.yaml
+- day2ops_v1alpha1_pruneobjects.yaml
+- day2ops_v1alpha1_etcddefrag.yaml
+- day2ops_v1alpha1_clusterupgrade.yaml
+- day2ops_v1alpha1_defaultprojectrequesttemplate.yaml
+- day2ops_v1alpha1_defaultnamespaces.yaml
+- day2ops_v1alpha1_etcdencrypt.yaml
+- day2ops_v1alpha1_privatecluster.yaml
+- day2ops_v1alpha1_expandnodeportrange.yaml
+- day2ops_v1alpha1_defaultstorageclassselect.yaml
+- day2ops_v1alpha1_removekubeadmin.yaml
+- day2ops_v1alpha1_backupkubeadmin.yaml
+- day2ops_v1alpha1_restorekubeadmin.yaml
+- day2ops_v1alpha1_etcdbackup.yaml
 #+kubebuilder:scaffold:manifestskustomizesamples

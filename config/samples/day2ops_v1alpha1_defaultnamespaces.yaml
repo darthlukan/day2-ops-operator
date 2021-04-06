@@ -1,0 +1,6 @@
+apiVersion: day2ops.redhatcop.redhat.io/v1alpha1
+kind: DefaultNamespaces
+metadata:
+  name: defaultnamespaces-sample
+spec:
+  foo: bar

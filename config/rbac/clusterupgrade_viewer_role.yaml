@@ -1,0 +1,20 @@
+# permissions for end users to view clusterupgrades.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: clusterupgrade-viewer-role
+rules:
+- apiGroups:
+  - day2ops.redhatcop.redhat.io
+  resources:
+  - clusterupgrades
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - day2ops.redhatcop.redhat.io
+  resources:
+  - clusterupgrades/status
+  verbs:
+  - get

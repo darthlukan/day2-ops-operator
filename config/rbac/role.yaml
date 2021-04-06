@@ -54,4 +54,259 @@ rules:
       - patch
       - update
       - watch
+  ##
+  ## Rules for day2ops.redhatcop.redhat.io/v1alpha1, Kind: SelfProvisioner
+  ##
+  - apiGroups:
+      - day2ops.redhatcop.redhat.io
+    resources:
+      - selfprovisioners
+      - selfprovisioners/status
+      - selfprovisioners/finalizers
+    verbs:
+      - create
+      - delete
+      - get
+      - list
+      - patch
+      - update
+      - watch
+  ##
+  ## Rules for day2ops.redhatcop.redhat.io/v1alpha1, Kind: K8SAuth
+  ##
+  - apiGroups:
+      - day2ops.redhatcop.redhat.io
+    resources:
+      - k8sauths
+      - k8sauths/status
+      - k8sauths/finalizers
+    verbs:
+      - create
+      - delete
+      - get
+      - list
+      - patch
+      - update
+      - watch
+  ##
+  ## Rules for day2ops.redhatcop.redhat.io/v1alpha1, Kind: PruneObjects
+  ##
+  - apiGroups:
+      - day2ops.redhatcop.redhat.io
+    resources:
+      - pruneobjects
+      - pruneobjects/status
+      - pruneobjects/finalizers
+    verbs:
+      - create
+      - delete
+      - get
+      - list
+      - patch
+      - update
+      - watch
+  ##
+  ## Rules for day2ops.redhatcop.redhat.io/v1alpha1, Kind: EtcdDefrag
+  ##
+  - apiGroups:
+      - day2ops.redhatcop.redhat.io
+    resources:
+      - etcddefrags
+      - etcddefrags/status
+      - etcddefrags/finalizers
+    verbs:
+      - create
+      - delete
+      - get
+      - list
+      - patch
+      - update
+      - watch
+  ##
+  ## Rules for day2ops.redhatcop.redhat.io/v1alpha1, Kind: ClusterUpgrade
+  ##
+  - apiGroups:
+      - day2ops.redhatcop.redhat.io
+    resources:
+      - clusterupgrades
+      - clusterupgrades/status
+      - clusterupgrades/finalizers
+    verbs:
+      - create
+      - delete
+      - get
+      - list
+      - patch
+      - update
+      - watch
+  ##
+  ## Rules for day2ops.redhatcop.redhat.io/v1alpha1, Kind: DefaultProjectRequestTemplate
+  ##
+  - apiGroups:
+      - day2ops.redhatcop.redhat.io
+    resources:
+      - defaultprojectrequesttemplates
+      - defaultprojectrequesttemplates/status
+      - defaultprojectrequesttemplates/finalizers
+    verbs:
+      - create
+      - delete
+      - get
+      - list
+      - patch
+      - update
+      - watch
+  ##
+  ## Rules for day2ops.redhatcop.redhat.io/v1alpha1, Kind: DefaultNamespaces
+  ##
+  - apiGroups:
+      - day2ops.redhatcop.redhat.io
+    resources:
+      - defaultnamespaces
+      - defaultnamespaces/status
+      - defaultnamespaces/finalizers
+    verbs:
+      - create
+      - delete
+      - get
+      - list
+      - patch
+      - update
+      - watch
+  ##
+  ## Rules for day2ops.redhatcop.redhat.io/v1alpha1, Kind: EtcdEncrypt
+  ##
+  - apiGroups:
+      - day2ops.redhatcop.redhat.io
+    resources:
+      - etcdencrypts
+      - etcdencrypts/status
+      - etcdencrypts/finalizers
+    verbs:
+      - create
+      - delete
+      - get
+      - list
+      - patch
+      - update
+      - watch
+  ##
+  ## Rules for day2ops.redhatcop.redhat.io/v1alpha1, Kind: PrivateCluster
+  ##
+  - apiGroups:
+      - day2ops.redhatcop.redhat.io
+    resources:
+      - privateclusters
+      - privateclusters/status
+      - privateclusters/finalizers
+    verbs:
+      - create
+      - delete
+      - get
+      - list
+      - patch
+      - update
+      - watch
+  ##
+  ## Rules for day2ops.redhatcop.redhat.io/v1alpha1, Kind: ExpandNodePortRange
+  ##
+  - apiGroups:
+      - day2ops.redhatcop.redhat.io
+    resources:
+      - expandnodeportranges
+      - expandnodeportranges/status
+      - expandnodeportranges/finalizers
+    verbs:
+      - create
+      - delete
+      - get
+      - list
+      - patch
+      - update
+      - watch
+  ##
+  ## Rules for day2ops.redhatcop.redhat.io/v1alpha1, Kind: DefaultStorageClassSelect
+  ##
+  - apiGroups:
+      - day2ops.redhatcop.redhat.io
+    resources:
+      - defaultstorageclassselects
+      - defaultstorageclassselects/status
+      - defaultstorageclassselects/finalizers
+    verbs:
+      - create
+      - delete
+      - get
+      - list
+      - patch
+      - update
+      - watch
+  ##
+  ## Rules for day2ops.redhatcop.redhat.io/v1alpha1, Kind: RemoveKubeadmin
+  ##
+  - apiGroups:
+      - day2ops.redhatcop.redhat.io
+    resources:
+      - removekubeadmins
+      - removekubeadmins/status
+      - removekubeadmins/finalizers
+    verbs:
+      - create
+      - delete
+      - get
+      - list
+      - patch
+      - update
+      - watch
+  ##
+  ## Rules for day2ops.redhatcop.redhat.io/v1alpha1, Kind: BackupKubeadmin
+  ##
+  - apiGroups:
+      - day2ops.redhatcop.redhat.io
+    resources:
+      - backupkubeadmins
+      - backupkubeadmins/status
+      - backupkubeadmins/finalizers
+    verbs:
+      - create
+      - delete
+      - get
+      - list
+      - patch
+      - update
+      - watch
+  ##
+  ## Rules for day2ops.redhatcop.redhat.io/v1alpha1, Kind: RestoreKubeadmin
+  ##
+  - apiGroups:
+      - day2ops.redhatcop.redhat.io
+    resources:
+      - restorekubeadmins
+      - restorekubeadmins/status
+      - restorekubeadmins/finalizers
+    verbs:
+      - create
+      - delete
+      - get
+      - list
+      - patch
+      - update
+      - watch
+  ##
+  ## Rules for day2ops.redhatcop.redhat.io/v1alpha1, Kind: EtcdBackup
+  ##
+  - apiGroups:
+      - day2ops.redhatcop.redhat.io
+    resources:
+      - etcdbackups
+      - etcdbackups/status
+      - etcdbackups/finalizers
+    verbs:
+      - create
+      - delete
+      - get
+      - list
+      - patch
+      - update
+      - watch
 #+kubebuilder:scaffold:rules

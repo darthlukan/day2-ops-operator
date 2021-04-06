@@ -3,4 +3,19 @@
 # It should be run by config/default
 resources:
 - bases/day2ops.redhatcop.redhat.io_day2ops.yaml
+- bases/day2ops.redhatcop.redhat.io_selfprovisioners.yaml
+- bases/day2ops.redhatcop.redhat.io_k8sauths.yaml
+- bases/day2ops.redhatcop.redhat.io_pruneobjects.yaml
+- bases/day2ops.redhatcop.redhat.io_etcddefrags.yaml
+- bases/day2ops.redhatcop.redhat.io_clusterupgrades.yaml
+- bases/day2ops.redhatcop.redhat.io_defaultprojectrequesttemplates.yaml
+- bases/day2ops.redhatcop.redhat.io_defaultnamespaces.yaml
+- bases/day2ops.redhatcop.redhat.io_etcdencrypts.yaml
+- bases/day2ops.redhatcop.redhat.io_privateclusters.yaml
+- bases/day2ops.redhatcop.redhat.io_expandnodeportranges.yaml
+- bases/day2ops.redhatcop.redhat.io_defaultstorageclassselects.yaml
+- bases/day2ops.redhatcop.redhat.io_removekubeadmins.yaml
+- bases/day2ops.redhatcop.redhat.io_backupkubeadmins.yaml
+- bases/day2ops.redhatcop.redhat.io_restorekubeadmins.yaml
+- bases/day2ops.redhatcop.redhat.io_etcdbackups.yaml
 #+kubebuilder:scaffold:crdkustomizeresource

@@ -1,0 +1,20 @@
+# permissions for end users to view etcdencrypts.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: etcdencrypt-viewer-role
+rules:
+- apiGroups:
+  - day2ops.redhatcop.redhat.io
+  resources:
+  - etcdencrypts
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - day2ops.redhatcop.redhat.io
+  resources:
+  - etcdencrypts/status
+  verbs:
+  - get

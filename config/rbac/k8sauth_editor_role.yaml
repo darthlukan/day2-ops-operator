@@ -1,0 +1,24 @@
+# permissions for end users to edit k8sauths.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: k8sauth-editor-role
+rules:
+- apiGroups:
+  - day2ops.redhatcop.redhat.io
+  resources:
+  - k8sauths
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - day2ops.redhatcop.redhat.io
+  resources:
+  - k8sauths/status
+  verbs:
+  - get

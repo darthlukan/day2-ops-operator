@@ -1,0 +1,6 @@
+apiVersion: day2ops.redhatcop.redhat.io/v1alpha1
+kind: DefaultStorageClassSelect
+metadata:
+  name: defaultstorageclassselect-sample
+spec:
+  foo: bar

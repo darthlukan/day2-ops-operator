@@ -1,0 +1,6 @@
+apiVersion: day2ops.redhatcop.redhat.io/v1alpha1
+kind: SelfProvisioner
+metadata:
+  name: selfprovisioner-sample
+spec:
+  foo: bar

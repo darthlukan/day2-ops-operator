@@ -1,0 +1,6 @@
+apiVersion: day2ops.redhatcop.redhat.io/v1alpha1
+kind: ClusterUpgrade
+metadata:
+  name: clusterupgrade-sample
+spec:
+  foo: bar

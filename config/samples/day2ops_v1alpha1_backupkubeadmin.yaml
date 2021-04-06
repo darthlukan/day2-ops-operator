@@ -1,0 +1,6 @@
+apiVersion: day2ops.redhatcop.redhat.io/v1alpha1
+kind: BackupKubeadmin
+metadata:
+  name: backupkubeadmin-sample
+spec:
+  foo: bar

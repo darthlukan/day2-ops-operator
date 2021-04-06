@@ -7,9 +7,113 @@ projectName: day2-operator
 resources:
 - api:
     crdVersion: v1
-    namespaced: false
   domain: redhatcop.redhat.io
   group: day2ops
   kind: Day2Op
+  version: v1alpha1
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: redhatcop.redhat.io
+  group: day2ops
+  kind: SelfProvisioner
+  version: v1alpha1
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: redhatcop.redhat.io
+  group: day2ops
+  kind: K8SAuth
+  version: v1alpha1
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: redhatcop.redhat.io
+  group: day2ops
+  kind: PruneObjects
+  version: v1alpha1
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: redhatcop.redhat.io
+  group: day2ops
+  kind: EtcdDefrag
+  version: v1alpha1
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: redhatcop.redhat.io
+  group: day2ops
+  kind: ClusterUpgrade
+  version: v1alpha1
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: redhatcop.redhat.io
+  group: day2ops
+  kind: DefaultProjectRequestTemplate
+  version: v1alpha1
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: redhatcop.redhat.io
+  group: day2ops
+  kind: DefaultNamespaces
+  version: v1alpha1
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: redhatcop.redhat.io
+  group: day2ops
+  kind: EtcdEncrypt
+  version: v1alpha1
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: redhatcop.redhat.io
+  group: day2ops
+  kind: PrivateCluster
+  version: v1alpha1
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: redhatcop.redhat.io
+  group: day2ops
+  kind: ExpandNodePortRange
+  version: v1alpha1
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: redhatcop.redhat.io
+  group: day2ops
+  kind: DefaultStorageClassSelect
+  version: v1alpha1
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: redhatcop.redhat.io
+  group: day2ops
+  kind: RemoveKubeadmin
+  version: v1alpha1
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: redhatcop.redhat.io
+  group: day2ops
+  kind: BackupKubeadmin
+  version: v1alpha1
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: redhatcop.redhat.io
+  group: day2ops
+  kind: RestoreKubeadmin
+  version: v1alpha1
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: redhatcop.redhat.io
+  group: day2ops
+  kind: EtcdBackup
   version: v1alpha1
 version: "3"

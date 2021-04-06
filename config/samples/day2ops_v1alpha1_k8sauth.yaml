@@ -1,0 +1,6 @@
+apiVersion: day2ops.redhatcop.redhat.io/v1alpha1
+kind: K8SAuth
+metadata:
+  name: k8sauth-sample
+spec:
+  foo: bar

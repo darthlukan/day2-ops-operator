@@ -1,0 +1,20 @@
+# permissions for end users to view expandnodeportranges.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: expandnodeportrange-viewer-role
+rules:
+- apiGroups:
+  - day2ops.redhatcop.redhat.io
+  resources:
+  - expandnodeportranges
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - day2ops.redhatcop.redhat.io
+  resources:
+  - expandnodeportranges/status
+  verbs:
+  - get

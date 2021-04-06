@@ -1,0 +1,24 @@
+# permissions for end users to edit selfprovisioners.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: selfprovisioner-editor-role
+rules:
+- apiGroups:
+  - day2ops.redhatcop.redhat.io
+  resources:
+  - selfprovisioners
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - day2ops.redhatcop.redhat.io
+  resources:
+  - selfprovisioners/status
+  verbs:
+  - get

@@ -1,0 +1,6 @@
+apiVersion: day2ops.redhatcop.redhat.io/v1alpha1
+kind: EtcdDefrag
+metadata:
+  name: etcddefrag-sample
+spec:
+  foo: bar

@@ -1,0 +1,6 @@
+apiVersion: day2ops.redhatcop.redhat.io/v1alpha1
+kind: PrivateCluster
+metadata:
+  name: privatecluster-sample
+spec:
+  foo: bar

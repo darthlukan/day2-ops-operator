@@ -1,0 +1,20 @@
+# permissions for end users to view removekubeadmins.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: removekubeadmin-viewer-role
+rules:
+- apiGroups:
+  - day2ops.redhatcop.redhat.io
+  resources:
+  - removekubeadmins
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - day2ops.redhatcop.redhat.io
+  resources:
+  - removekubeadmins/status
+  verbs:
+  - get

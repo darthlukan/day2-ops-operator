@@ -1,0 +1,6 @@
+apiVersion: day2ops.redhatcop.redhat.io/v1alpha1
+kind: EtcdEncrypt
+metadata:
+  name: etcdencrypt-sample
+spec:
+  foo: bar
