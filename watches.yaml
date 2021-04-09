@@ -28,6 +28,9 @@
   group: day2ops.redhatcop.redhat.io
   kind: DefaultNamespaces
   role: defaultnamespaces
+  finalizer:
+    vars:
+      state: absent
 - version: v1alpha1
   group: day2ops.redhatcop.redhat.io
   kind: EtcdEncrypt

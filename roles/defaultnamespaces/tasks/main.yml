@@ -1,2 +1,13 @@
 ---
-# tasks file for DefaultNamespaces
+- name: "{{ 'Create' if state is 'present' else 'Remove' }} additional default namespaces"
+  community.kubernetes.k8s:
+    state: "{{ state }}"
+    definition:
+      apiVersion: v1
+      kind: Namespace
+      metadata:
+        name: "{{ item.name }}"
+        annotations: "{{ item.annotations }}"
+        labels: "{{ item.labels }}"
+  loop: "{{ namespaces }}"
+...

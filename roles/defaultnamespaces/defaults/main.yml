@@ -1,9 +1,19 @@
 ---
+# Set desired state. Valid values are 'present' or 'absent'
+# default: present
+state: present
+
+# The namespaces to add along with their associated annotations and labels.
 namespaces:
   - name: foo
-    annotations: ""
+    annotations:
+      example-annotation: "change-me"
+    labels:
+      example-label: "remove-me"
   - name: bar
     annotations: ""
+    labels: ""
   - name: baz
     annotations: ""
+    labels: ""
 ...
