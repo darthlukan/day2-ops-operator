@@ -1,2 +1,18 @@
 ---
-# defaults file for SelfProvisioner
+# OCP 4.7 docs recommend setting "false" to avoid overwrite by operator: https://docs.openshift.com/container-platform/4.7/applications/projects/configuring-project-creation.html#disabling-project-self-provisioning_configuring-project-creation
+# default: false
+autoupdate_value: false
+
+# Set an alternate group subject for self-provisioners ClusterRolebinding
+# This is a means of ensuring some group retains the explicit right to self-provision namespaces
+# default: "system:cluster-admins"
+alternate_group: "system:cluster-admins"
+
+# Configure additional self-provisioner groups
+# default: null
+# example of adding a custom subject:
+# additional_groups:
+#   - my_custom_group_name
+#   - another_custom_group_name
+# NOTE: additional_groups can only accept custom group name subjects which are of kind rbac.authorization.k8s.io/Group.
+additional_groups: null
