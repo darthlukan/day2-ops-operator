@@ -16,3 +16,8 @@ alternate_group: "system:cluster-admins"
 #   - another_custom_group_name
 # NOTE: additional_groups can only accept custom group name subjects which are of kind rbac.authorization.k8s.io/Group.
 additional_groups: null
+
+# Set a project request message for those without the self-provisioner to be informed of how they may request a project/namespace.
+# default: "To request a project, please contact your cluster administrator."
+# NOTE: It is a good idea to include contact info in this message.
+project_request_message: "To request a project, please contact your cluster administrator."
