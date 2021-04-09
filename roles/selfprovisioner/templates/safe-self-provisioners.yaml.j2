@@ -1,0 +1,23 @@
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  annotations:
+    rbac.authorization.kubernetes.io/autoupdate: "{{ autoupdate_value }}"
+  name: self-provisioners
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: self-provisioner
+subjects:
+- apiGroup: rbac.authorization.k8s.io
+  kind: Group
+  name: {{ alternate_group }}
+{% if additional_groups is not null %}
+  {% for group_name in additional_groups %}
+- apiGroup: rbac.authorization.k8s.io
+  kind: Group
+  name: {{ group_name }}
+  {% endfor %}
+{% endif %}
+...
