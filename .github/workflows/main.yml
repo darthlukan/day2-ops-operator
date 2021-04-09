@@ -15,3 +15,6 @@ jobs:
 
       - name: ansible-lint
         uses: ansible/ansible-lint-action@master
+        with:
+          targets: |
+            roles/
