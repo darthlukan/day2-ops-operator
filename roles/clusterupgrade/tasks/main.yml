@@ -7,7 +7,7 @@
   register: current_version
 
   # TODO: This only gets the first version available, which is probably correct, but incomplete.
-- name:  Set version facts
+- name: Set version facts
   set_fact:
     available: "{{ current_version | community.general.json_query('.status.availableUpdates[0].version').split('.') }}"
     available_minor: "{{ available[1] | int }}"
