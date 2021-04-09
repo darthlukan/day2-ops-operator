@@ -1,2 +1,14 @@
 ---
-# tasks file for SelfProvisioner
+- name: Apply safe-self-provisioners template
+  community.kubernetes.k8s:
+    state: present
+    template:
+      path: "{{ lookup(template, safe-self-provisioners.yaml.j2) }}"
+
+- name: Apply project-request template
+  community.kubernetes.k8s:
+    state: present
+    template:
+      path: "{{ lookup(template, project-request.yaml.j2) }}"
+  when: project_request_message | length > 0
+...
