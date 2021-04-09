@@ -1,5 +1,6 @@
 ---
-# OCP 4.7 docs recommend setting "false" to avoid overwrite by operator: https://docs.openshift.com/container-platform/4.7/applications/projects/configuring-project-creation.html#disabling-project-self-provisioning_configuring-project-creation
+# OCP 4.7 docs recommend setting "false" to avoid overwrite by operator: 
+# https://docs.openshift.com/container-platform/4.7/applications/projects/configuring-project-creation.html#disabling-project-self-provisioning_configuring-project-creation
 # default: false
 autoupdate_value: false
 
