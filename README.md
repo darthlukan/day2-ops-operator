@@ -1,4 +1,5 @@
 # day2-operator
+[![CI](https://github.com/darthlukan/day2-ops-operator/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/darthlukan/day2-ops-operator/actions/workflows/main.yml)
 
 Author: Brian Tomlinson <btomlins@redhat.com>
 
